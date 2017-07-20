@@ -92,7 +92,8 @@ class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDel
     func handleTap(sender: UITapGestureRecognizer? = nil) {
         // handling code
         print("Tap")
-        let storyboard = UIStoryboard.init(name: "VNOfficeHour", bundle: nil)
+        let bundle = Bundle(for: type(of: self))
+        let storyboard = UIStoryboard.init(name: "VNOfficeHour", bundle: bundle)
         let vc:VNOfficeHourViewController = storyboard.instantiateViewController(withIdentifier: "VNOfficeHourViewController") as! VNOfficeHourViewController
         vc.delegate = self
         if(self.arrayValuesForCell.count > 0)

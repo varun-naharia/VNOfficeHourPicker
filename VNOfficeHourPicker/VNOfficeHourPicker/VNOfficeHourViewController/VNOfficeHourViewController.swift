@@ -21,7 +21,8 @@ class VNOfficeHourViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        tableViewHours.register(UINib(nibName: "VNOfficeHourTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
+        let bundle = Bundle(for: type(of: self))
+        tableViewHours.register(UINib(nibName: "VNOfficeHourTableViewCell", bundle: bundle), forCellReuseIdentifier: "Cell")
         if(!(arrayValuesForCell.count > 0))
         {
             arrayValuesForCell = [
@@ -53,6 +54,7 @@ class VNOfficeHourViewController: UIViewController, UITableViewDataSource, UITab
     }
     */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let bundle = Bundle(for: type(of: self))
         let cell:VNOfficeHourTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! VNOfficeHourTableViewCell
         cell.btnMon.isEnabled = (arrayValuesForCell[indexPath.row]["Mon"] as! String != "nil")
         cell.btnTue.isEnabled = (arrayValuesForCell[indexPath.row]["Tue"] as! String != "nil")
@@ -62,13 +64,13 @@ class VNOfficeHourViewController: UIViewController, UITableViewDataSource, UITab
         cell.btnSat.isEnabled = (arrayValuesForCell[indexPath.row]["Sat"] as! String != "nil")
         cell.btnSun.isEnabled = (arrayValuesForCell[indexPath.row]["Sun"] as! String != "nil")
         
-        cell.btnMon.setImage((arrayValuesForCell[indexPath.row]["Mon"] as! String) == "true" ? #imageLiteral(resourceName: "checkboxselected.png") : #imageLiteral(resourceName: "checkbox.png"), for: .normal)
-        cell.btnTue.setImage((arrayValuesForCell[indexPath.row]["Tue"] as! String) == "true" ? #imageLiteral(resourceName: "checkboxselected.png") : #imageLiteral(resourceName: "checkbox.png"), for: .normal)
-        cell.btnWed.setImage((arrayValuesForCell[indexPath.row]["Wed"] as! String) == "true" ? #imageLiteral(resourceName: "checkboxselected.png") : #imageLiteral(resourceName: "checkbox.png"), for: .normal)
-        cell.btnThu.setImage((arrayValuesForCell[indexPath.row]["Thu"] as! String) == "true" ? #imageLiteral(resourceName: "checkboxselected.png") : #imageLiteral(resourceName: "checkbox.png"), for: .normal)
-        cell.btnFri.setImage((arrayValuesForCell[indexPath.row]["Fri"] as! String) == "true" ? #imageLiteral(resourceName: "checkboxselected.png") : #imageLiteral(resourceName: "checkbox.png"), for: .normal)
-        cell.btnSat.setImage((arrayValuesForCell[indexPath.row]["Sat"] as! String) == "true" ? #imageLiteral(resourceName: "checkboxselected.png") : #imageLiteral(resourceName: "checkbox.png"), for: .normal)
-        cell.btnSun.setImage((arrayValuesForCell[indexPath.row]["Sun"] as! String) == "true" ? #imageLiteral(resourceName: "checkboxselected.png") : #imageLiteral(resourceName: "checkbox.png"), for: .normal)
+        cell.btnMon.setImage((arrayValuesForCell[indexPath.row]["Mon"] as! String) == "true" ? UIImage(named: "checkboxselected", in: bundle, compatibleWith: nil) : UIImage(named: "checkbox", in: bundle, compatibleWith: nil), for: .normal)
+        cell.btnTue.setImage((arrayValuesForCell[indexPath.row]["Tue"] as! String) == "true" ? UIImage(named: "checkboxselected", in: bundle, compatibleWith: nil) : UIImage(named: "checkbox", in: bundle, compatibleWith: nil), for: .normal)
+        cell.btnWed.setImage((arrayValuesForCell[indexPath.row]["Wed"] as! String) == "true" ? UIImage(named: "checkboxselected", in: bundle, compatibleWith: nil) : UIImage(named: "checkbox", in: bundle, compatibleWith: nil), for: .normal)
+        cell.btnThu.setImage((arrayValuesForCell[indexPath.row]["Thu"] as! String) == "true" ? UIImage(named: "checkboxselected", in: bundle, compatibleWith: nil) : UIImage(named: "checkbox", in: bundle, compatibleWith: nil), for: .normal)
+        cell.btnFri.setImage((arrayValuesForCell[indexPath.row]["Fri"] as! String) == "true" ? UIImage(named: "checkboxselected", in: bundle, compatibleWith: nil) : UIImage(named: "checkbox", in: bundle, compatibleWith: nil), for: .normal)
+        cell.btnSat.setImage((arrayValuesForCell[indexPath.row]["Sat"] as! String) == "true" ? UIImage(named: "checkboxselected", in: bundle, compatibleWith: nil) : UIImage(named: "checkbox", in: bundle, compatibleWith: nil), for: .normal)
+        cell.btnSun.setImage((arrayValuesForCell[indexPath.row]["Sun"] as! String) == "true" ? UIImage(named: "checkboxselected", in: bundle, compatibleWith: nil) : UIImage(named: "checkbox", in: bundle, compatibleWith: nil), for: .normal)
         
         cell.txtStart.text = arrayValuesForCell[indexPath.row]["start"] as? String
         cell.txtEnd.text = arrayValuesForCell[indexPath.row]["end"] as? String
