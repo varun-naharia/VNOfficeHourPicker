@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "VNOfficeHourPicker", "VNOfficeHourPicker/**/*.{h,m,swift}"
-  s.exclude_files = "VNOfficeHourPicker/Exclude"
+  s.source_files  = "VNOfficeHourPicker", "VNOfficeHourPicker/**/*.{swift}"
+  #s.exclude_files = "VNOfficeHourPicker/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
