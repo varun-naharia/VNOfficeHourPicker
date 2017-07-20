@@ -10,6 +10,19 @@
 		AB95E7E71F2073F800BD36AE /* VNOfficeHourPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB95E7DD1F2073F800BD36AE /* VNOfficeHourPicker.framework */; };
 		AB95E7EC1F2073F800BD36AE /* VNOfficeHourPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E7EB1F2073F800BD36AE /* VNOfficeHourPickerTests.swift */; };
 		AB95E7EE1F2073F800BD36AE /* VNOfficeHourPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = AB95E7E01F2073F800BD36AE /* VNOfficeHourPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB95E7FC1F2078C100BD36AE /* Extention+Extra.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E7F81F2078C100BD36AE /* Extention+Extra.swift */; };
+		AB95E7FD1F2078C100BD36AE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E7F91F2078C100BD36AE /* CustomButton.swift */; };
+		AB95E7FE1F2078C100BD36AE /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E7FA1F2078C100BD36AE /* CustomLabel.swift */; };
+		AB95E7FF1F2078C100BD36AE /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E7FB1F2078C100BD36AE /* CustomTextField.swift */; };
+		AB95E8041F20799300BD36AE /* VNOfficeHourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E8021F20799300BD36AE /* VNOfficeHourTableViewCell.swift */; };
+		AB95E8051F20799300BD36AE /* VNOfficeHourTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB95E8031F20799300BD36AE /* VNOfficeHourTableViewCell.xib */; };
+		AB95E8091F2079C400BD36AE /* VNOfficeHour.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB95E8071F2079C400BD36AE /* VNOfficeHour.storyboard */; };
+		AB95E80A1F2079C400BD36AE /* VNOfficeHourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E8081F2079C400BD36AE /* VNOfficeHourViewController.swift */; };
+		AB95E80D1F2079D300BD36AE /* VNOfficeHourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E80B1F2079D300BD36AE /* VNOfficeHourView.swift */; };
+		AB95E80E1F2079D300BD36AE /* VNOfficeHourView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB95E80C1F2079D300BD36AE /* VNOfficeHourView.xib */; };
+		AB95E8131F207AB900BD36AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E8101F207AB900BD36AE /* ViewController.swift */; };
+		AB95E8141F207AB900BD36AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB95E8111F207AB900BD36AE /* Main.storyboard */; };
+		AB95E8151F207AB900BD36AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB95E8121F207AB900BD36AE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +42,19 @@
 		AB95E7E61F2073F800BD36AE /* VNOfficeHourPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VNOfficeHourPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB95E7EB1F2073F800BD36AE /* VNOfficeHourPickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNOfficeHourPickerTests.swift; sourceTree = "<group>"; };
 		AB95E7ED1F2073F800BD36AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB95E7F81F2078C100BD36AE /* Extention+Extra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extention+Extra.swift"; sourceTree = "<group>"; };
+		AB95E7F91F2078C100BD36AE /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		AB95E7FA1F2078C100BD36AE /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		AB95E7FB1F2078C100BD36AE /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AB95E8021F20799300BD36AE /* VNOfficeHourTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNOfficeHourTableViewCell.swift; sourceTree = "<group>"; };
+		AB95E8031F20799300BD36AE /* VNOfficeHourTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VNOfficeHourTableViewCell.xib; sourceTree = "<group>"; };
+		AB95E8071F2079C400BD36AE /* VNOfficeHour.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VNOfficeHour.storyboard; sourceTree = "<group>"; };
+		AB95E8081F2079C400BD36AE /* VNOfficeHourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNOfficeHourViewController.swift; sourceTree = "<group>"; };
+		AB95E80B1F2079D300BD36AE /* VNOfficeHourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNOfficeHourView.swift; sourceTree = "<group>"; };
+		AB95E80C1F2079D300BD36AE /* VNOfficeHourView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VNOfficeHourView.xib; sourceTree = "<group>"; };
+		AB95E8101F207AB900BD36AE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB95E8111F207AB900BD36AE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AB95E8121F207AB900BD36AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,9 @@
 		AB95E7DF1F2073F800BD36AE /* VNOfficeHourPicker */ = {
 			isa = PBXGroup;
 			children = (
+				AB95E80F1F2079D800BD36AE /* Example */,
+				AB95E8001F2078D600BD36AE /* VNOfficeHourPicker */,
+				AB95E7F71F20789700BD36AE /* Utilities */,
 				AB95E7E01F2073F800BD36AE /* VNOfficeHourPicker.h */,
 				AB95E7E11F2073F800BD36AE /* Info.plist */,
 			);
@@ -84,6 +113,56 @@
 				AB95E7ED1F2073F800BD36AE /* Info.plist */,
 			);
 			path = VNOfficeHourPickerTests;
+			sourceTree = "<group>";
+		};
+		AB95E7F71F20789700BD36AE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AB95E7F81F2078C100BD36AE /* Extention+Extra.swift */,
+				AB95E7F91F2078C100BD36AE /* CustomButton.swift */,
+				AB95E7FA1F2078C100BD36AE /* CustomLabel.swift */,
+				AB95E7FB1F2078C100BD36AE /* CustomTextField.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AB95E8001F2078D600BD36AE /* VNOfficeHourPicker */ = {
+			isa = PBXGroup;
+			children = (
+				AB95E80B1F2079D300BD36AE /* VNOfficeHourView.swift */,
+				AB95E80C1F2079D300BD36AE /* VNOfficeHourView.xib */,
+				AB95E8061F2079A600BD36AE /* VNOfficeHourViewController */,
+				AB95E8011F2078FE00BD36AE /* VNOfficeHourTableViewCell */,
+			);
+			path = VNOfficeHourPicker;
+			sourceTree = "<group>";
+		};
+		AB95E8011F2078FE00BD36AE /* VNOfficeHourTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				AB95E8021F20799300BD36AE /* VNOfficeHourTableViewCell.swift */,
+				AB95E8031F20799300BD36AE /* VNOfficeHourTableViewCell.xib */,
+			);
+			path = VNOfficeHourTableViewCell;
+			sourceTree = "<group>";
+		};
+		AB95E8061F2079A600BD36AE /* VNOfficeHourViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AB95E8071F2079C400BD36AE /* VNOfficeHour.storyboard */,
+				AB95E8081F2079C400BD36AE /* VNOfficeHourViewController.swift */,
+			);
+			path = VNOfficeHourViewController;
+			sourceTree = "<group>";
+		};
+		AB95E80F1F2079D800BD36AE /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				AB95E8101F207AB900BD36AE /* ViewController.swift */,
+				AB95E8111F207AB900BD36AE /* Main.storyboard */,
+				AB95E8121F207AB900BD36AE /* Assets.xcassets */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +228,7 @@
 					AB95E7DC1F2073F800BD36AE = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 2658J76W2S;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					AB95E7E51F2073F800BD36AE = {
@@ -181,6 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB95E8091F2079C400BD36AE /* VNOfficeHour.storyboard in Resources */,
+				AB95E8051F20799300BD36AE /* VNOfficeHourTableViewCell.xib in Resources */,
+				AB95E80E1F2079D300BD36AE /* VNOfficeHourView.xib in Resources */,
+				AB95E8141F207AB900BD36AE /* Main.storyboard in Resources */,
+				AB95E8151F207AB900BD36AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +283,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB95E80A1F2079C400BD36AE /* VNOfficeHourViewController.swift in Sources */,
+				AB95E7FF1F2078C100BD36AE /* CustomTextField.swift in Sources */,
+				AB95E7FD1F2078C100BD36AE /* CustomButton.swift in Sources */,
+				AB95E7FE1F2078C100BD36AE /* CustomLabel.swift in Sources */,
+				AB95E8041F20799300BD36AE /* VNOfficeHourTableViewCell.swift in Sources */,
+				AB95E7FC1F2078C100BD36AE /* Extention+Extra.swift in Sources */,
+				AB95E8131F207AB900BD36AE /* ViewController.swift in Sources */,
+				AB95E80D1F2079D300BD36AE /* VNOfficeHourView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +417,7 @@
 		AB95E7F21F2073F800BD36AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2658J76W2S;
@@ -336,6 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.varunnaharia.VNOfficeHourPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +438,7 @@
 		AB95E7F31F2073F800BD36AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2658J76W2S;
@@ -362,6 +458,7 @@
 		AB95E7F51F2073F800BD36AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2658J76W2S;
 				INFOPLIST_FILE = VNOfficeHourPickerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +471,7 @@
 		AB95E7F61F2073F800BD36AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2658J76W2S;
 				INFOPLIST_FILE = VNOfficeHourPickerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +500,7 @@
 				AB95E7F31F2073F800BD36AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB95E7F41F2073F800BD36AE /* Build configuration list for PBXNativeTarget "VNOfficeHourPickerTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +509,7 @@
 				AB95E7F61F2073F800BD36AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

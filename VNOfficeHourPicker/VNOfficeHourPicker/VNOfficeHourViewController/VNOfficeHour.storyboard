@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Office Hour View Controller-->
+        <scene sceneID="bLR-57-qCm">
+            <objects>
+                <viewController storyboardIdentifier="VNOfficeHourViewController" id="jZn-c0-eIb" customClass="VNOfficeHourViewController" customModule="OfficeHourPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ceq-ha-reO"/>
+                        <viewControllerLayoutGuide type="bottom" id="TEK-aj-Kr5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gto-Qz-uSD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5K-YQ-Baj">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.37254901959999998" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="z2R-6g-JnR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveAction:" destination="jZn-c0-eIb" eventType="touchUpInside" id="EPP-lg-uYi"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jYY-1G-3et">
+                                <rect key="frame" x="0.0" y="28" width="375" height="590"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="awk-z4-ak8">
+                                    <rect key="frame" x="0.0" y="148" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="  Add More" image="add.png">
+                                        <color key="titleColor" red="0.0" green="0.37025282120000003" blue="0.84708658849999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="addMoreAction:" destination="jZn-c0-eIb" eventType="touchUpInside" id="fCt-fn-Rtc"/>
+                                    </connections>
+                                </button>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="120" id="tzX-xE-W83" customClass="VNOfficeHourTableViewCell" customModule="OfficeHourPicker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tzX-xE-W83" id="hEo-Wt-cju">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jZn-c0-eIb" id="wfK-g8-9nG"/>
+                                    <outlet property="delegate" destination="jZn-c0-eIb" id="dse-b3-Vht"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jYY-1G-3et" firstAttribute="top" secondItem="ceq-ha-reO" secondAttribute="bottom" constant="8" symbolic="YES" id="FPH-dh-RA8"/>
+                            <constraint firstItem="K5K-YQ-Baj" firstAttribute="bottom" secondItem="TEK-aj-Kr5" secondAttribute="top" id="XpJ-uy-dpd"/>
+                            <constraint firstItem="K5K-YQ-Baj" firstAttribute="top" secondItem="jYY-1G-3et" secondAttribute="bottom" constant="-1" id="d3W-HD-Imm"/>
+                            <constraint firstItem="jYY-1G-3et" firstAttribute="trailing" secondItem="K5K-YQ-Baj" secondAttribute="trailing" id="gqM-7V-MsK"/>
+                            <constraint firstItem="jYY-1G-3et" firstAttribute="leading" secondItem="K5K-YQ-Baj" secondAttribute="leading" id="q7W-WS-Jgl"/>
+                            <constraint firstItem="jYY-1G-3et" firstAttribute="leading" secondItem="Gto-Qz-uSD" secondAttribute="leading" id="xIc-6J-2YP"/>
+                            <constraint firstAttribute="trailing" secondItem="jYY-1G-3et" secondAttribute="trailing" id="zxE-ah-Lmj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewHours" destination="jYY-1G-3et" id="Nt6-IP-k0R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnR-Pd-OGu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.3999999999999999" y="-112.89355322338831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add.png" width="24" height="24"/>
+    </resources>
+</document>
