@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VNOfficeHourPicker"
-  s.version      = "0.1.0"
+  s.version      = "0.2.0"
   s.summary      = "VNOfficeHourPicker lets a user select an Office Working Hour For Week."
 
   # This description is used to generate tags and improve search results.
