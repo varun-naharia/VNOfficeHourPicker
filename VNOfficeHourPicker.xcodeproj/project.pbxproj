@@ -20,9 +20,6 @@
 		AB95E80A1F2079C400BD36AE /* VNOfficeHourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E8081F2079C400BD36AE /* VNOfficeHourViewController.swift */; };
 		AB95E80D1F2079D300BD36AE /* VNOfficeHourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E80B1F2079D300BD36AE /* VNOfficeHourView.swift */; };
 		AB95E80E1F2079D300BD36AE /* VNOfficeHourView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB95E80C1F2079D300BD36AE /* VNOfficeHourView.xib */; };
-		AB95E8131F207AB900BD36AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95E8101F207AB900BD36AE /* ViewController.swift */; };
-		AB95E8141F207AB900BD36AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB95E8111F207AB900BD36AE /* Main.storyboard */; };
-		AB95E8151F207AB900BD36AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB95E8121F207AB900BD36AE /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +49,6 @@
 		AB95E8081F2079C400BD36AE /* VNOfficeHourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNOfficeHourViewController.swift; sourceTree = "<group>"; };
 		AB95E80B1F2079D300BD36AE /* VNOfficeHourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNOfficeHourView.swift; sourceTree = "<group>"; };
 		AB95E80C1F2079D300BD36AE /* VNOfficeHourView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VNOfficeHourView.xib; sourceTree = "<group>"; };
-		AB95E8101F207AB900BD36AE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AB95E8111F207AB900BD36AE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		AB95E8121F207AB900BD36AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +91,6 @@
 		AB95E7DF1F2073F800BD36AE /* VNOfficeHourPicker */ = {
 			isa = PBXGroup;
 			children = (
-				AB95E80F1F2079D800BD36AE /* Example */,
 				AB95E8001F2078D600BD36AE /* VNOfficeHourPicker */,
 				AB95E7F71F20789700BD36AE /* Utilities */,
 				AB95E7E01F2073F800BD36AE /* VNOfficeHourPicker.h */,
@@ -153,16 +146,6 @@
 				AB95E8081F2079C400BD36AE /* VNOfficeHourViewController.swift */,
 			);
 			path = VNOfficeHourViewController;
-			sourceTree = "<group>";
-		};
-		AB95E80F1F2079D800BD36AE /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				AB95E8101F207AB900BD36AE /* ViewController.swift */,
-				AB95E8111F207AB900BD36AE /* Main.storyboard */,
-				AB95E8121F207AB900BD36AE /* Assets.xcassets */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +247,6 @@
 				AB95E8091F2079C400BD36AE /* VNOfficeHour.storyboard in Resources */,
 				AB95E8051F20799300BD36AE /* VNOfficeHourTableViewCell.xib in Resources */,
 				AB95E80E1F2079D300BD36AE /* VNOfficeHourView.xib in Resources */,
-				AB95E8141F207AB900BD36AE /* Main.storyboard in Resources */,
-				AB95E8151F207AB900BD36AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +270,6 @@
 				AB95E7FE1F2078C100BD36AE /* CustomLabel.swift in Sources */,
 				AB95E8041F20799300BD36AE /* VNOfficeHourTableViewCell.swift in Sources */,
 				AB95E7FC1F2078C100BD36AE /* Extention+Extra.swift in Sources */,
-				AB95E8131F207AB900BD36AE /* ViewController.swift in Sources */,
 				AB95E80D1F2079D300BD36AE /* VNOfficeHourView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
