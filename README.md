@@ -9,7 +9,7 @@ Take a look at the sample project to find out how to use it.
 
 ### Manual
 
-To manually install the framework, drag and drop the `VNCameraScanner/VNCameraScanner.swift` files into your project.
+To manually install the framework, drag and drop the `VNOfficeHourPicker` folder into your project.
 
 ### Cocoapods
 
@@ -17,7 +17,7 @@ Add the following to your Podfile:
 
 ``` ruby
 use_frameworks!
-pod "VNOfficeHourPicker"
+pod 'VNOfficeHourPicker', '~> 0.2'
 ```
 
 ## Author
