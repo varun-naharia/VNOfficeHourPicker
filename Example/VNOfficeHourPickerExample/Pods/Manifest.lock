@@ -1,0 +1,12 @@
+PODS:
+  - VNOfficeHourPicker (0.2.1)
+
+DEPENDENCIES:
+  - VNOfficeHourPicker (~> 0.2)
+
+SPEC CHECKSUMS:
+  VNOfficeHourPicker: d09a8f40f84414fd440f12db6f820256bdb7e9ba
+
+PODFILE CHECKSUM: d17e38db0acbc723b92d82fa9b8542184edcf92c
+
+COCOAPODS: 1.2.0

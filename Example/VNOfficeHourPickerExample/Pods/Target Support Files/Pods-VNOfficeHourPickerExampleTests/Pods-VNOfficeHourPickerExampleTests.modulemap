@@ -1,0 +1,6 @@
+framework module Pods_VNOfficeHourPickerExampleTests {
+  umbrella header "Pods-VNOfficeHourPickerExampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

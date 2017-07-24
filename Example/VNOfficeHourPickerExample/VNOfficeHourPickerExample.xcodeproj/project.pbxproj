@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0479B29E16100BB3B0CF81D7 /* Pods_VNOfficeHourPickerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD028ED91408BFC6943CE34 /* Pods_VNOfficeHourPickerExample.framework */; };
+		5E4366711F26666300DB4B17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4366701F26666300DB4B17 /* AppDelegate.swift */; };
+		5E4366731F26666300DB4B17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4366721F26666300DB4B17 /* ViewController.swift */; };
+		5E4366761F26666400DB4B17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4366741F26666400DB4B17 /* Main.storyboard */; };
+		5E4366781F26666400DB4B17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4366771F26666400DB4B17 /* Assets.xcassets */; };
+		5E43667B1F26666400DB4B17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4366791F26666400DB4B17 /* LaunchScreen.storyboard */; };
+		5E4366861F26666400DB4B17 /* VNOfficeHourPickerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4366851F26666400DB4B17 /* VNOfficeHourPickerExampleTests.swift */; };
+		5E4366911F26666400DB4B17 /* VNOfficeHourPickerExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4366901F26666400DB4B17 /* VNOfficeHourPickerExampleUITests.swift */; };
+		B17B72403B1635CB59347250 /* Pods_VNOfficeHourPickerExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331F0DAD82105587E06252FE /* Pods_VNOfficeHourPickerExampleUITests.framework */; };
+		E0DE8CC13A3B391EC3A347D0 /* Pods_VNOfficeHourPickerExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B132ACA9752CC1D2D5516A /* Pods_VNOfficeHourPickerExampleTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E4366821F26666400DB4B17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E4366651F26666300DB4B17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E43666C1F26666300DB4B17;
+			remoteInfo = VNOfficeHourPickerExample;
+		};
+		5E43668D1F26666400DB4B17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E4366651F26666300DB4B17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E43666C1F26666300DB4B17;
+			remoteInfo = VNOfficeHourPickerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DD028ED91408BFC6943CE34 /* Pods_VNOfficeHourPickerExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNOfficeHourPickerExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B132ACA9752CC1D2D5516A /* Pods_VNOfficeHourPickerExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNOfficeHourPickerExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		331F0DAD82105587E06252FE /* Pods_VNOfficeHourPickerExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VNOfficeHourPickerExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2CD8A6958549DDD681DCE1 /* Pods-VNOfficeHourPickerExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNOfficeHourPickerExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VNOfficeHourPickerExampleTests/Pods-VNOfficeHourPickerExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		51056182CB1A1E0A2EC88AF0 /* Pods-VNOfficeHourPickerExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNOfficeHourPickerExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VNOfficeHourPickerExampleTests/Pods-VNOfficeHourPickerExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E43666D1F26666300DB4B17 /* VNOfficeHourPickerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VNOfficeHourPickerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4366701F26666300DB4B17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E4366721F26666300DB4B17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E4366751F26666400DB4B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E4366771F26666400DB4B17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E43667A1F26666400DB4B17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E43667C1F26666400DB4B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4366811F26666400DB4B17 /* VNOfficeHourPickerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VNOfficeHourPickerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4366851F26666400DB4B17 /* VNOfficeHourPickerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNOfficeHourPickerExampleTests.swift; sourceTree = "<group>"; };
+		5E4366871F26666400DB4B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E43668C1F26666400DB4B17 /* VNOfficeHourPickerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VNOfficeHourPickerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4366901F26666400DB4B17 /* VNOfficeHourPickerExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNOfficeHourPickerExampleUITests.swift; sourceTree = "<group>"; };
+		5E4366921F26666400DB4B17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B645C1CABE2993D02A3B6521 /* Pods-VNOfficeHourPickerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNOfficeHourPickerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VNOfficeHourPickerExample/Pods-VNOfficeHourPickerExample.debug.xcconfig"; sourceTree = "<group>"; };
+		CAAEC1226E32C9B33F4BC964 /* Pods-VNOfficeHourPickerExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNOfficeHourPickerExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VNOfficeHourPickerExampleUITests/Pods-VNOfficeHourPickerExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D5FFD2239A74F8970AC4551B /* Pods-VNOfficeHourPickerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNOfficeHourPickerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-VNOfficeHourPickerExample/Pods-VNOfficeHourPickerExample.release.xcconfig"; sourceTree = "<group>"; };
+		DF89EC664466771AAA070108 /* Pods-VNOfficeHourPickerExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VNOfficeHourPickerExampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VNOfficeHourPickerExampleUITests/Pods-VNOfficeHourPickerExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E43666A1F26666300DB4B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0479B29E16100BB3B0CF81D7 /* Pods_VNOfficeHourPickerExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E43667E1F26666400DB4B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0DE8CC13A3B391EC3A347D0 /* Pods_VNOfficeHourPickerExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4366891F26666400DB4B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17B72403B1635CB59347250 /* Pods_VNOfficeHourPickerExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C4C7FDDC1713FAD35004DA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DD028ED91408BFC6943CE34 /* Pods_VNOfficeHourPickerExample.framework */,
+				10B132ACA9752CC1D2D5516A /* Pods_VNOfficeHourPickerExampleTests.framework */,
+				331F0DAD82105587E06252FE /* Pods_VNOfficeHourPickerExampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E4366641F26666300DB4B17 = {
+			isa = PBXGroup;
+			children = (
+				5E43666F1F26666300DB4B17 /* VNOfficeHourPickerExample */,
+				5E4366841F26666400DB4B17 /* VNOfficeHourPickerExampleTests */,
+				5E43668F1F26666400DB4B17 /* VNOfficeHourPickerExampleUITests */,
+				5E43666E1F26666300DB4B17 /* Products */,
+				84407ACA150BADBC63C1A726 /* Pods */,
+				3C4C7FDDC1713FAD35004DA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E43666E1F26666300DB4B17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E43666D1F26666300DB4B17 /* VNOfficeHourPickerExample.app */,
+				5E4366811F26666400DB4B17 /* VNOfficeHourPickerExampleTests.xctest */,
+				5E43668C1F26666400DB4B17 /* VNOfficeHourPickerExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E43666F1F26666300DB4B17 /* VNOfficeHourPickerExample */ = {
+			isa = PBXGroup;
+			children = (
+				5E4366701F26666300DB4B17 /* AppDelegate.swift */,
+				5E4366721F26666300DB4B17 /* ViewController.swift */,
+				5E4366741F26666400DB4B17 /* Main.storyboard */,
+				5E4366771F26666400DB4B17 /* Assets.xcassets */,
+				5E4366791F26666400DB4B17 /* LaunchScreen.storyboard */,
+				5E43667C1F26666400DB4B17 /* Info.plist */,
+			);
+			path = VNOfficeHourPickerExample;
+			sourceTree = "<group>";
+		};
+		5E4366841F26666400DB4B17 /* VNOfficeHourPickerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4366851F26666400DB4B17 /* VNOfficeHourPickerExampleTests.swift */,
+				5E4366871F26666400DB4B17 /* Info.plist */,
+			);
+			path = VNOfficeHourPickerExampleTests;
+			sourceTree = "<group>";
+		};
+		5E43668F1F26666400DB4B17 /* VNOfficeHourPickerExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E4366901F26666400DB4B17 /* VNOfficeHourPickerExampleUITests.swift */,
+				5E4366921F26666400DB4B17 /* Info.plist */,
+			);
+			path = VNOfficeHourPickerExampleUITests;
+			sourceTree = "<group>";
+		};
+		84407ACA150BADBC63C1A726 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B645C1CABE2993D02A3B6521 /* Pods-VNOfficeHourPickerExample.debug.xcconfig */,
+				D5FFD2239A74F8970AC4551B /* Pods-VNOfficeHourPickerExample.release.xcconfig */,
+				51056182CB1A1E0A2EC88AF0 /* Pods-VNOfficeHourPickerExampleTests.debug.xcconfig */,
+				4E2CD8A6958549DDD681DCE1 /* Pods-VNOfficeHourPickerExampleTests.release.xcconfig */,
+				CAAEC1226E32C9B33F4BC964 /* Pods-VNOfficeHourPickerExampleUITests.debug.xcconfig */,
+				DF89EC664466771AAA070108 /* Pods-VNOfficeHourPickerExampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E43666C1F26666300DB4B17 /* VNOfficeHourPickerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4366951F26666400DB4B17 /* Build configuration list for PBXNativeTarget "VNOfficeHourPickerExample" */;
+			buildPhases = (
+				C41168F0B0AA7FB93AB54539 /* [CP] Check Pods Manifest.lock */,
+				5E4366691F26666300DB4B17 /* Sources */,
+				5E43666A1F26666300DB4B17 /* Frameworks */,
+				5E43666B1F26666300DB4B17 /* Resources */,
+				833269D19D8873BE32ACBDA1 /* [CP] Embed Pods Frameworks */,
+				4232CC23F9ED74DD6961E032 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VNOfficeHourPickerExample;
+			productName = VNOfficeHourPickerExample;
+			productReference = 5E43666D1F26666300DB4B17 /* VNOfficeHourPickerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E4366801F26666400DB4B17 /* VNOfficeHourPickerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E4366981F26666400DB4B17 /* Build configuration list for PBXNativeTarget "VNOfficeHourPickerExampleTests" */;
+			buildPhases = (
+				ED8D4B6D5622317FB68F23F4 /* [CP] Check Pods Manifest.lock */,
+				5E43667D1F26666400DB4B17 /* Sources */,
+				5E43667E1F26666400DB4B17 /* Frameworks */,
+				5E43667F1F26666400DB4B17 /* Resources */,
+				3745D10680B25927B656FFB4 /* [CP] Embed Pods Frameworks */,
+				1BDB144823D623EF7544E1A7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E4366831F26666400DB4B17 /* PBXTargetDependency */,
+			);
+			name = VNOfficeHourPickerExampleTests;
+			productName = VNOfficeHourPickerExampleTests;
+			productReference = 5E4366811F26666400DB4B17 /* VNOfficeHourPickerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E43668B1F26666400DB4B17 /* VNOfficeHourPickerExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E43669B1F26666400DB4B17 /* Build configuration list for PBXNativeTarget "VNOfficeHourPickerExampleUITests" */;
+			buildPhases = (
+				F80E5E4C7BBB2E195B1CF504 /* [CP] Check Pods Manifest.lock */,
+				5E4366881F26666400DB4B17 /* Sources */,
+				5E4366891F26666400DB4B17 /* Frameworks */,
+				5E43668A1F26666400DB4B17 /* Resources */,
+				93A7F983C14A49B2BA535E31 /* [CP] Embed Pods Frameworks */,
+				BEF4BEAA8CB3C91857D2F8BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E43668E1F26666400DB4B17 /* PBXTargetDependency */,
+			);
+			name = VNOfficeHourPickerExampleUITests;
+			productName = VNOfficeHourPickerExampleUITests;
+			productReference = 5E43668C1F26666400DB4B17 /* VNOfficeHourPickerExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E4366651F26666300DB4B17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Varun Naharia";
+				TargetAttributes = {
+					5E43666C1F26666300DB4B17 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					5E4366801F26666400DB4B17 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5E43666C1F26666300DB4B17;
+					};
+					5E43668B1F26666400DB4B17 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5E43666C1F26666300DB4B17;
+					};
+				};
+			};
+			buildConfigurationList = 5E4366681F26666300DB4B17 /* Build configuration list for PBXProject "VNOfficeHourPickerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E4366641F26666300DB4B17;
+			productRefGroup = 5E43666E1F26666300DB4B17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E43666C1F26666300DB4B17 /* VNOfficeHourPickerExample */,
+				5E4366801F26666400DB4B17 /* VNOfficeHourPickerExampleTests */,
+				5E43668B1F26666400DB4B17 /* VNOfficeHourPickerExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E43666B1F26666300DB4B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E43667B1F26666400DB4B17 /* LaunchScreen.storyboard in Resources */,
+				5E4366781F26666400DB4B17 /* Assets.xcassets in Resources */,
+				5E4366761F26666400DB4B17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E43667F1F26666400DB4B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E43668A1F26666400DB4B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BDB144823D623EF7544E1A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VNOfficeHourPickerExampleTests/Pods-VNOfficeHourPickerExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3745D10680B25927B656FFB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VNOfficeHourPickerExampleTests/Pods-VNOfficeHourPickerExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4232CC23F9ED74DD6961E032 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VNOfficeHourPickerExample/Pods-VNOfficeHourPickerExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		833269D19D8873BE32ACBDA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VNOfficeHourPickerExample/Pods-VNOfficeHourPickerExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93A7F983C14A49B2BA535E31 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VNOfficeHourPickerExampleUITests/Pods-VNOfficeHourPickerExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEF4BEAA8CB3C91857D2F8BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VNOfficeHourPickerExampleUITests/Pods-VNOfficeHourPickerExampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C41168F0B0AA7FB93AB54539 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8D4B6D5622317FB68F23F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F80E5E4C7BBB2E195B1CF504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E4366691F26666300DB4B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4366731F26666300DB4B17 /* ViewController.swift in Sources */,
+				5E4366711F26666300DB4B17 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E43667D1F26666400DB4B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4366861F26666400DB4B17 /* VNOfficeHourPickerExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E4366881F26666400DB4B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4366911F26666400DB4B17 /* VNOfficeHourPickerExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E4366831F26666400DB4B17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E43666C1F26666300DB4B17 /* VNOfficeHourPickerExample */;
+			targetProxy = 5E4366821F26666400DB4B17 /* PBXContainerItemProxy */;
+		};
+		5E43668E1F26666400DB4B17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E43666C1F26666300DB4B17 /* VNOfficeHourPickerExample */;
+			targetProxy = 5E43668D1F26666400DB4B17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E4366741F26666400DB4B17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E4366751F26666400DB4B17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E4366791F26666400DB4B17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E43667A1F26666400DB4B17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E4366931F26666400DB4B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E4366941F26666400DB4B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E4366961F26666400DB4B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B645C1CABE2993D02A3B6521 /* Pods-VNOfficeHourPickerExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VNOfficeHourPickerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNOfficeHourPickerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5E4366971F26666400DB4B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FFD2239A74F8970AC4551B /* Pods-VNOfficeHourPickerExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VNOfficeHourPickerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNOfficeHourPickerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5E4366991F26666400DB4B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51056182CB1A1E0A2EC88AF0 /* Pods-VNOfficeHourPickerExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VNOfficeHourPickerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNOfficeHourPickerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VNOfficeHourPickerExample.app/VNOfficeHourPickerExample";
+			};
+			name = Debug;
+		};
+		5E43669A1F26666400DB4B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2CD8A6958549DDD681DCE1 /* Pods-VNOfficeHourPickerExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VNOfficeHourPickerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNOfficeHourPickerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VNOfficeHourPickerExample.app/VNOfficeHourPickerExample";
+			};
+			name = Release;
+		};
+		5E43669C1F26666400DB4B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAAEC1226E32C9B33F4BC964 /* Pods-VNOfficeHourPickerExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VNOfficeHourPickerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNOfficeHourPickerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VNOfficeHourPickerExample;
+			};
+			name = Debug;
+		};
+		5E43669D1F26666400DB4B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF89EC664466771AAA070108 /* Pods-VNOfficeHourPickerExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VNOfficeHourPickerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VNOfficeHourPickerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VNOfficeHourPickerExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E4366681F26666300DB4B17 /* Build configuration list for PBXProject "VNOfficeHourPickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4366931F26666400DB4B17 /* Debug */,
+				5E4366941F26666400DB4B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E4366951F26666400DB4B17 /* Build configuration list for PBXNativeTarget "VNOfficeHourPickerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4366961F26666400DB4B17 /* Debug */,
+				5E4366971F26666400DB4B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E4366981F26666400DB4B17 /* Build configuration list for PBXNativeTarget "VNOfficeHourPickerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4366991F26666400DB4B17 /* Debug */,
+				5E43669A1F26666400DB4B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E43669B1F26666400DB4B17 /* Build configuration list for PBXNativeTarget "VNOfficeHourPickerExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E43669C1F26666400DB4B17 /* Debug */,
+				5E43669D1F26666400DB4B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E4366651F26666300DB4B17 /* Project object */;
+}

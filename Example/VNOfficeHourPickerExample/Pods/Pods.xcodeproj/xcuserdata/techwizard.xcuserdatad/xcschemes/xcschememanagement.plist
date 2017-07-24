@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-VNOfficeHourPickerExample.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VNOfficeHourPickerExampleTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VNOfficeHourPickerExampleUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>VNOfficeHourPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>733159304B54F773D2183B127C85F205</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A22B588F86722409B47381C7904D9B24</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC89B14AF67B78A43A5FAD93B5BCE84F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AD75D90B102B305B2E3D4A79C920A9DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
