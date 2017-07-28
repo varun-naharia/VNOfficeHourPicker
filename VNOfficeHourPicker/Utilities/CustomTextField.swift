@@ -160,6 +160,7 @@ class CustomTextField: UITextField,UITextFieldDelegate {
         }
     }
     
+    fileprivate let underline:UIView = UIView()
     func updateView() {
         if let imageLeft = leftImage {
             leftViewMode = UITextFieldViewMode.always
@@ -189,7 +190,7 @@ class CustomTextField: UITextField,UITextFieldDelegate {
         attributedPlaceholder = NSAttributedString(string: placeholder != nil ?  placeholder! : "", attributes:[NSForegroundColorAttributeName: color])
         if(self.isUnderLine)
         {
-            let underline:UIView = UIView()
+            
             underline.frame = CGRect(x: 0, y: self.frame.size.height-1, width: self.frame.size.width, height: 1)
             underline.backgroundColor = underlineColor
             self.addSubview(underline)
@@ -230,6 +231,11 @@ class CustomTextField: UITextField,UITextFieldDelegate {
             }
         }
         
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        underline.frame = CGRect(x: 0, y: self.frame.size.height-1, width: self.frame.size.width, height: 1)
     }
 
 }

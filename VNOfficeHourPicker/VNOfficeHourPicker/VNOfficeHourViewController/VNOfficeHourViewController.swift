@@ -109,10 +109,12 @@ class VNOfficeHourViewController: UIViewController, UITableViewDataSource, UITab
         cell.txtEnd.inputAccessoryView = toolBarEnd
         cell.txtStart.add(for: .editingDidBegin) {
             cell.txtStart.inputView = datePickerView
+            cell.startDate = nil
+            datePickerView.minimumDate = nil
             if(cell.endDate != nil)
             {
-                datePickerView.maximumDate = cell.endDate
-                datePickerView.minimumDate = nil
+                cell.txtEnd.text = ""
+                cell.endDate = nil
             }
             datePickerView.add(for: .valueChanged, {
                 if(cell.txtStart.isFirstResponder)

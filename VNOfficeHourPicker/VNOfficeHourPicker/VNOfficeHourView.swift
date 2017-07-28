@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDelegate {
+public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDelegate {
 
     
     @IBOutlet weak var lblMondayValue: UILabel!
@@ -34,23 +34,74 @@ class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDel
             return layer.cornerRadius
         }
     }
+    
+    fileprivate var _fontSize:CGFloat = 18
+    @IBInspectable
+    var font:CGFloat
+    {
+        set
+        {
+            _fontSize = newValue
+            lblPlaceholder.font = UIFont(name: _fontName, size: _fontSize)
+        }
+        get
+        {
+            return _fontSize
+        }
+    }
+    
+    fileprivate var _fontName:String = "Helvetica"
+    @IBInspectable
+    var fontName:String
+    {
+        set
+        {
+            _fontName = newValue
+            lblPlaceholder.font = UIFont(name: _fontName, size: _fontSize)
+        }
+        get
+        {
+            return _fontName
+        }
+    }
+    
+    fileprivate var _placeholder:String?
+    @IBInspectable
+    var Placeholder:String
+    {
+        set
+        {
+            _placeholder = newValue
+            if(_placeholder != "")
+            {
+                addPlaceholder()
+            }
+        }
+        get
+        {
+            return _placeholder!
+        }
+    }
+    
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.setUpView()
         xibSetup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         xibSetup()
     }
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         self.setUpView()
     }
     
-    override func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
     }
     
@@ -59,7 +110,7 @@ class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDel
         
         // use bounds not frame or it'll be offset
         view.frame = bounds
-        
+        view.backgroundColor = self.backgroundColor
         // Make the view stretch with containing view
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         // Adding custom subview on top of our view (over any custom drawing > see note below)
@@ -74,6 +125,12 @@ class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDel
         
         return view
     }
+    var lblPlaceholder:UILabel = UILabel()
+    func addPlaceholder(){
+        lblPlaceholder.text = _placeholder
+        lblPlaceholder.textColor = UIColor.lightGray
+        self.view.addSubview(lblPlaceholder)
+    }
     
     //var underline = UILabel()
     func setUpView() {
@@ -85,8 +142,8 @@ class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDel
         self.addGestureRecognizer(tap)
     }
     
-    override func layoutSubviews() {
-        //underline.frame = CGRect(x: 0, y: self.frame.size.height - 1, width: self.frame.size.width, height: 1)
+    override public func layoutSubviews() {
+        lblPlaceholder.frame = CGRect(x: 0, y: 0, width: self.frame.size.width, height: 30)
     }
     
     func handleTap(sender: UITapGestureRecognizer? = nil) {
@@ -113,21 +170,23 @@ class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDel
         if(arrayValuesForCell.count > 0)
         {
             viewHeight.constant = 211
+            lblPlaceholder.isHidden = true
         }
         else
         {
+            lblPlaceholder.isHidden = false
             viewHeight.constant = 0
         }
         
         self.numberOfRows = numberOfRow
         
-        lblMondayValue.text = getDayTime(data: arrData, For: "Mon")
-        lblTuesdayValue.text = getDayTime(data: arrData, For: "Tue")
-        lblWednesdayValue.text = getDayTime(data: arrData, For: "Wed")
-        lblThruesdayValue.text = getDayTime(data: arrData, For: "Thu")
-        lblFridayValue.text = getDayTime(data: arrData, For: "Fri")
-        lblSaturdayValue.text = getDayTime(data: arrData, For: "Sat")
-        lblSundayValue.text = getDayTime(data: arrData, For: "Sun")
+        lblMondayValue.text = getDayTime(forDay: "Mon")
+        lblTuesdayValue.text = getDayTime(forDay: "Tue")
+        lblWednesdayValue.text = getDayTime(forDay: "Wed")
+        lblThruesdayValue.text = getDayTime(forDay: "Thu")
+        lblFridayValue.text = getDayTime(forDay: "Fri")
+        lblSaturdayValue.text = getDayTime(forDay: "Sat")
+        lblSundayValue.text = getDayTime(forDay: "Sun")
         
         lblMondayValue.textColor = lblMondayValue.text == "Closed" ? UIColor.red :UIColor.blue
         lblTuesdayValue.textColor = lblTuesdayValue.text == "Closed" ? UIColor.red :UIColor.blue
@@ -140,11 +199,11 @@ class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDel
         
     }
     
-    func getDayTime(data:[[String:Any]], For:String) -> String {
-        for item in data {
-            if(item[For] != nil)
+    func getDayTime(forDay:String) -> String {
+        for item in arrayValuesForCell {
+            if(item[forDay] != nil)
             {
-                if((item[For] as! String) == "true" && (item["start"] as! String) != "" && (item["end"] as! String) != "" )
+                if((item[forDay] as! String) == "true" && (item["start"] as! String) != "" && (item["end"] as! String) != "" )
                 {
                     return "\((item["start"] as! String)) To \((item["end"] as! String))"
                 }
@@ -152,6 +211,61 @@ class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHourViewDel
         }
         
         return "Closed"
+    }
+    
+    func getStartTime(forDay:String) -> String {
+        for item in arrayValuesForCell {
+            if(item[forDay] != nil)
+            {
+                if((item[forDay] as! String) == "true" && (item["start"] as! String) != "" && (item["end"] as! String) != "" )
+                {
+                    return "\((item["start"] as! String))"
+                }
+            }
+        }
+        
+        return "Closed"
+    }
+    
+    func getEndTime(forDay:String) -> String {
+        for item in arrayValuesForCell {
+            if(item[forDay] != nil)
+            {
+                if((item[forDay] as! String) == "true" && (item["start"] as! String) != "" && (item["end"] as! String) != "" )
+                {
+                    return "\((item["end"] as! String))"
+                }
+            }
+        }
+        
+        return "Closed"
+    }
+    
+    func getStatus(forDay:String) -> Bool {
+        for item in arrayValuesForCell {
+            if(item[forDay] != nil)
+            {
+                if((item[forDay] as! String) == "true" && (item["start"] as! String) != "" && (item["end"] as! String) != "" )
+                {
+                    return true
+                }
+            }
+        }
+        
+        return false
+    }
+    
+    public func getOpeningHour()-> [[String:Any]] {
+        
+        var arrOpeningHour:[[String:Any]] = []
+        arrOpeningHour.append(["day":"Monday", "fromTime": getStartTime(forDay: "Mon"), "toTime":getEndTime(forDay: "Mon"), "status":getStatus(forDay: "Mon")])
+        arrOpeningHour.append(["day":"Tuesday", "fromTime": getStartTime(forDay: "Tue"), "toTime":getEndTime(forDay: "Tue"), "status":getStatus(forDay: "Tue")])
+        arrOpeningHour.append(["day":"Wednesday", "fromTime": getStartTime(forDay: "Wed"), "toTime":getEndTime(forDay: "Wed"), "status":getStatus(forDay: "Wed")])
+        arrOpeningHour.append(["day":"Thuresday", "fromTime": getStartTime(forDay: "Thu"), "toTime":getEndTime(forDay: "Thu"), "status":getStatus(forDay: "Thu")])
+        arrOpeningHour.append(["day":"Friday", "fromTime": getStartTime(forDay: "Fri"), "toTime":getEndTime(forDay: "Fri"), "status":getStatus(forDay: "Fri")])
+        arrOpeningHour.append(["day":"Saturday", "fromTime": getStartTime(forDay: "Sat"), "toTime":getEndTime(forDay: "Sat"), "status":getStatus(forDay: "Sat")])
+        arrOpeningHour.append(["day":"Sunday", "fromTime": getStartTime(forDay: "Sun"), "toTime":getEndTime(forDay: "Sun"), "status":getStatus(forDay: "Sun")])
+        return arrOpeningHour
     }
     
 }
