@@ -18,6 +18,7 @@
                 <outlet property="lblThruesdayValue" destination="jQ6-VW-enb" id="73W-VF-STg"/>
                 <outlet property="lblTuesdayValue" destination="IP6-qr-456" id="hAg-en-KZM"/>
                 <outlet property="lblWednesdayValue" destination="92H-8f-5HS" id="gjG-Y1-IZY"/>
+                <outlet property="underlineView" destination="I4k-Ic-FAc" id="rnO-os-8gt"/>
                 <outlet property="viewHeight" destination="LKq-1t-QpE" id="gOH-gF-ziu"/>
             </connections>
         </placeholder>
@@ -38,6 +39,7 @@
                     <subviews>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4p-Hl-vZf">
                             <rect key="frame" x="8" y="8" width="90" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="ea6-Ly-cyF"/>
                                 <constraint firstAttribute="height" constant="21" id="qOY-Fq-7tw"/>
@@ -48,6 +50,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuB-Tc-Zbj">
                             <rect key="frame" x="106" y="8" width="261" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="D9A-A0-sB2"/>
                             </constraints>
@@ -57,6 +60,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d10-Tu-Ed1">
                             <rect key="frame" x="8" y="37" width="90" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="4Nj-fG-OA0"/>
                                 <constraint firstAttribute="height" constant="21" id="NgV-xc-fCl"/>
@@ -67,6 +71,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IP6-qr-456">
                             <rect key="frame" x="106" y="37" width="261" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="kzA-Te-cGn"/>
                             </constraints>
@@ -76,6 +81,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNw-GX-ReX">
                             <rect key="frame" x="8" y="66" width="90" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="1zk-BY-m8g"/>
                                 <constraint firstAttribute="height" constant="21" id="HG1-Ju-Iao"/>
@@ -86,6 +92,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92H-8f-5HS">
                             <rect key="frame" x="106" y="66" width="261" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="6Rz-Qx-Yxt"/>
                             </constraints>
@@ -95,6 +102,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thruesday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVk-Ua-A0a">
                             <rect key="frame" x="8" y="95" width="90" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="90" id="CMz-RC-6fD"/>
                                 <constraint firstAttribute="height" constant="21" id="K5G-E6-uFa"/>
@@ -105,6 +113,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ6-VW-enb">
                             <rect key="frame" x="106" y="95" width="261" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="Bhn-Rx-Gwb"/>
                             </constraints>
@@ -114,6 +123,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS3-f4-41Q">
                             <rect key="frame" x="8" y="124" width="90" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="bTc-fF-vDy"/>
                                 <constraint firstAttribute="width" constant="90" id="uFD-3m-K2D"/>
@@ -124,6 +134,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUH-6l-w1i">
                             <rect key="frame" x="106" y="124" width="261" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="mjG-BS-b2x"/>
                             </constraints>
@@ -133,6 +144,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m48-Gw-QIL">
                             <rect key="frame" x="8" y="153" width="90" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="6XN-rN-ZUj"/>
                                 <constraint firstAttribute="width" constant="90" id="gym-9P-Afa"/>
@@ -143,6 +155,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb9-0k-dhr">
                             <rect key="frame" x="106" y="153" width="261" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="gON-Un-49L"/>
                             </constraints>
@@ -152,6 +165,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-8B-ybg">
                             <rect key="frame" x="8" y="182" width="90" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="Klf-p0-GUH"/>
                                 <constraint firstAttribute="width" constant="90" id="w4v-Qu-vKJ"/>
@@ -162,6 +176,7 @@
                         </label>
                         <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6W-kQ-P9s">
                             <rect key="frame" x="106" y="182" width="261" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21" id="W5k-F2-R10"/>
                             </constraints>
@@ -170,7 +185,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="LuB-Tc-Zbj" firstAttribute="top" secondItem="deK-ju-HkJ" secondAttribute="top" constant="8" id="0DZ-Zx-QKZ"/>
                         <constraint firstItem="y4p-Hl-vZf" firstAttribute="top" secondItem="deK-ju-HkJ" secondAttribute="top" constant="8" id="2X3-QI-FLE"/>

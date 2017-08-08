@@ -20,6 +20,7 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
     @IBOutlet weak var lblSaturdayValue: UILabel!
     @IBOutlet weak var lblSundayValue: UILabel!
     @IBOutlet weak var viewHeight: NSLayoutConstraint!
+    @IBOutlet weak var underlineView: UIView!
     
     var arrayValuesForCell:[[String:Any]] = []
     var view: UIView!
@@ -67,7 +68,7 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
     
     fileprivate var _placeholder:String?
     @IBInspectable
-    var Placeholder:String
+    public var placeholder:String
     {
         set
         {
@@ -83,6 +84,50 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
         }
     }
     
+    fileprivate var _text:String?
+    @IBInspectable
+    public var text:String
+    {
+        set
+        {
+            _text = newValue
+            if(_text != "")
+            {
+                addText()
+            }
+        }
+        get
+        {
+            return _text!
+        }
+    }
+    
+    fileprivate var _isEditable:Bool = true
+    @IBInspectable
+    public var isEditable:Bool
+    {
+        set
+        {
+            _isEditable = newValue
+        }
+        get
+        {
+            return _isEditable
+        }
+    }
+    
+    @IBInspectable var isUnderLine:Bool = false
+        {
+        didSet{
+            updateView()
+        }
+    }
+    @IBInspectable var underlineColor:UIColor = UIColor.black
+        {
+        didSet{
+            self.updateView()
+        }
+    }
     
     
     override init(frame: CGRect) {
@@ -107,7 +152,6 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
     
     func xibSetup() {
         view = loadViewFromNib()
-        
         // use bounds not frame or it'll be offset
         view.frame = bounds
         view.backgroundColor = self.backgroundColor
@@ -127,9 +171,23 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
     }
     var lblPlaceholder:UILabel = UILabel()
     func addPlaceholder(){
+        lblPlaceholder.removeFromSuperview()
         lblPlaceholder.text = _placeholder
+        lblPlaceholder.text = _text
         lblPlaceholder.textColor = UIColor.lightGray
         self.view.addSubview(lblPlaceholder)
+    }
+    
+    func addText(){
+        lblPlaceholder.removeFromSuperview()
+        lblPlaceholder.text = _text
+        lblPlaceholder.textColor = UIColor.black
+        self.view.addSubview(lblPlaceholder)
+    }
+    
+    func updateView() {
+        underlineView.isHidden = isUnderLine
+        underlineView.backgroundColor = underlineColor
     }
     
     //var underline = UILabel()
@@ -148,25 +206,32 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
     
     func handleTap(sender: UITapGestureRecognizer? = nil) {
         // handling code
-        print("Tap")
-        let bundle = Bundle(for: type(of: self))
-        let storyboard = UIStoryboard.init(name: "VNOfficeHour", bundle: bundle)
-        let vc:VNOfficeHourViewController = storyboard.instantiateViewController(withIdentifier: "VNOfficeHourViewController") as! VNOfficeHourViewController
-        vc.delegate = self
-        if(self.arrayValuesForCell.count > 0)
-        {
-            vc.arrayValuesForCell = self.arrayValuesForCell
+        if isEditable {
+            print("Tap")
+            let bundle = Bundle(for: type(of: self))
+            let storyboard = UIStoryboard.init(name: "VNOfficeHour", bundle: bundle)
+            let vc:VNOfficeHourViewController = storyboard.instantiateViewController(withIdentifier: "VNOfficeHourViewController") as! VNOfficeHourViewController
+            vc.delegate = self
+            if(self.arrayValuesForCell.count > 0)
+            {
+                vc.arrayValuesForCell = self.arrayValuesForCell
+            }
+            if(numberOfRows != 0)
+            {
+                vc.rowCount = numberOfRows
+            }
+            self.getParentViewController()?.present(vc, animated: true, completion: nil)
         }
-        if(numberOfRows != 0)
-        {
-            vc.rowCount = numberOfRows
-        }
-        self.getParentViewController()?.present(vc, animated: true, completion: nil)
     }
     
     
     func save(arrData: [[String : Any]], numberOfRow: Int) {
         self.arrayValuesForCell = arrData
+        self.numberOfRows = numberOfRow
+        refreshView()
+    }
+    
+    func refreshView(){
         if(arrayValuesForCell.count > 0)
         {
             viewHeight.constant = 211
@@ -177,8 +242,10 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
             lblPlaceholder.isHidden = false
             viewHeight.constant = 0
         }
-        
-        self.numberOfRows = numberOfRow
+        if(self.numberOfRows == 0)
+        {
+            self.numberOfRows = arrayValuesForCell.count
+        }
         
         lblMondayValue.text = getDayTime(forDay: "Mon")
         lblTuesdayValue.text = getDayTime(forDay: "Tue")
@@ -195,8 +262,6 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
         lblFridayValue.textColor = lblFridayValue.text == "Closed" ? UIColor.red :UIColor.blue
         lblSaturdayValue.textColor = lblSaturdayValue.text == "Closed" ? UIColor.red :UIColor.blue
         lblSundayValue.textColor = lblSundayValue.text == "Closed" ? UIColor.red :UIColor.blue
-        
-        
     }
     
     func getDayTime(forDay:String) -> String {
@@ -267,5 +332,74 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
         arrOpeningHour.append(["day":"Sunday", "fromTime": getStartTime(forDay: "Sun"), "toTime":getEndTime(forDay: "Sun"), "status":getStatus(forDay: "Sun")])
         return arrOpeningHour
     }
+    
+    //["Mon":"false", "Tue":"false", "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":"", "end":""]
+    
+    func setDayValue(forDay:String, startTime:String, endTime:String, status:String) {
+        switch forDay {
+        case "Monday":
+            if(status == "true")
+            {
+                let dict = ["Mon":status, "Tue":"false", "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                self.arrayValuesForCell.append(dict)
+            }
+            break
+        case "Tuesday":
+            if(status == "true")
+            {
+                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                self.arrayValuesForCell.append(dict)
+            }
+            break
+        case "Wednesday":
+            if(status == "true")
+            {
+                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                self.arrayValuesForCell.append(dict)
+            }
+            break
+        case "Thuresday":
+            if(status == "true")
+            {
+                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                self.arrayValuesForCell.append(dict)
+            }
+            break
+        case "Friday":
+            if(status == "true")
+            {
+                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                self.arrayValuesForCell.append(dict)
+            }
+            break
+        case "Saturday":
+            if(status == "true")
+            {
+                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                self.arrayValuesForCell.append(dict)
+            }
+            break
+        case "Sunday":
+            if(status == "true")
+            {
+                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                self.arrayValuesForCell.append(dict)
+            }
+            break
+        default:
+            let dict = ["Mon":"false", "Tue":"false", "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":"", "end":""]
+            self.arrayValuesForCell.append(dict)
+            break
+            
+        }
+    }
+    
+    public func setOpeningHour(openingHour:[[String:Any]]){
+        for day in openingHour {
+            setDayValue(forDay: day["day"] as! String, startTime: day["fromTime"] as! String, endTime: day["toTime"] as! String, status: day["status"] as! String)
+        }
+        refreshView()
+    }
+    
     
 }
