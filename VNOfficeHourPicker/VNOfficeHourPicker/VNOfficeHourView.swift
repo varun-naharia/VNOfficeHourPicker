@@ -116,10 +116,19 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
         }
     }
     
-    @IBInspectable var isUnderLine:Bool = false
+    fileprivate var _isUnderLine:Bool = false
+    
+    @IBInspectable
+    public var isUnderLine:Bool
+    {
+        set
         {
-        didSet{
+            _isUnderLine = newValue
             updateView()
+        }
+        get
+        {
+            return _isUnderLine
         }
     }
     @IBInspectable var underlineColor:UIColor = UIColor.black
@@ -148,6 +157,7 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
     
     override public func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
+        updateView()
     }
     
     func xibSetup() {
@@ -186,7 +196,7 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
     }
     
     func updateView() {
-        underlineView.isHidden = isUnderLine
+        underlineView.isHidden = !isUnderLine
         underlineView.backgroundColor = underlineColor
     }
     

@@ -27,13 +27,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="231"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4k-Ic-FAc">
-                    <rect key="frame" x="0.0" y="230" width="375" height="1"/>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="1" id="3gM-d9-Yw7"/>
-                    </constraints>
-                </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deK-ju-HkJ">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
                     <subviews>
@@ -223,6 +216,13 @@
                         <constraint firstAttribute="trailing" secondItem="92H-8f-5HS" secondAttribute="trailing" constant="8" id="wEG-bw-Iol"/>
                         <constraint firstItem="d10-Tu-Ed1" firstAttribute="leading" secondItem="deK-ju-HkJ" secondAttribute="leading" constant="8" id="wrE-JW-IVS"/>
                         <constraint firstAttribute="trailing" secondItem="jQ6-VW-enb" secondAttribute="trailing" constant="8" id="yoL-KD-5qI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4k-Ic-FAc">
+                    <rect key="frame" x="0.0" y="230" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3gM-d9-Yw7"/>
                     </constraints>
                 </view>
             </subviews>
