@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="321" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="321" height="120"/>
+                <rect key="frame" x="0.0" y="0.0" width="321" height="119.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G7U-3H-mGv">
@@ -67,22 +67,9 @@
                         <color key="textColor" red="0.93725490199999995" green="0.37254901959999998" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select from time" textAlignment="center" minimumFontSize="17" id="ris-dC-efW" customClass="CustomTextField" customModule="VNOfficeHourPicker" customModuleProvider="target">
-                        <rect key="frame" x="8" y="87" width="145" height="24"/>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select from time" textAlignment="center" minimumFontSize="17" id="ris-dC-efW" customClass="CustomTextField" customModule="VNOfficeHourPicker" customModuleProvider="target">
+                        <rect key="frame" x="8" y="81" width="145" height="30"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <nil key="textColor"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderLine" value="YES"/>
-                            <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
-                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </textField>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select to time" textAlignment="center" minimumFontSize="17" id="bAS-ss-bV9" customClass="CustomTextField" customModule="VNOfficeHourPicker" customModuleProvider="target">
-                        <rect key="frame" x="168" y="87" width="145" height="24"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
@@ -149,6 +136,19 @@
                             <action selector="sunAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5T5-lH-RbR"/>
                         </connections>
                     </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select to time" textAlignment="center" minimumFontSize="17" id="bAS-ss-bV9" customClass="CustomTextField" customModule="VNOfficeHourPicker" customModuleProvider="target">
+                        <rect key="frame" x="168" y="81" width="145" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderLine" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="underlineColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
                 </subviews>
             </tableViewCellContentView>
             <connections>
