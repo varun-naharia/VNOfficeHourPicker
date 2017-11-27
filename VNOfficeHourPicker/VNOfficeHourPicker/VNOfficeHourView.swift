@@ -364,35 +364,35 @@ public class VNOfficeHourView: UIView, UIGestureRecognizerDelegate, VNOfficeHour
         case "Wednesday":
             if(status == "true")
             {
-                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                let dict = ["Mon":"false", "Tue":"false", "Wed":status, "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
                 self.arrayValuesForCell.append(dict)
             }
             break
         case "Thuresday":
             if(status == "true")
             {
-                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                let dict = ["Mon":"false", "Tue":"false", "Wed":"false", "Thu":status, "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
                 self.arrayValuesForCell.append(dict)
             }
             break
         case "Friday":
             if(status == "true")
             {
-                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                let dict = ["Mon":"false", "Tue":"false", "Wed":"false", "Thu":"false", "Fri":status, "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
                 self.arrayValuesForCell.append(dict)
             }
             break
         case "Saturday":
             if(status == "true")
             {
-                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                let dict = ["Mon":"false", "Tue":"false", "Wed":"false", "Thu":"false", "Fri":"false", "Sat":status, "Sun":"false", "start":startTime, "end":endTime]
                 self.arrayValuesForCell.append(dict)
             }
             break
         case "Sunday":
             if(status == "true")
             {
-                let dict = ["Mon":"false", "Tue":status, "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":"false", "start":startTime, "end":endTime]
+                let dict = ["Mon":"false", "Tue":"false", "Wed":"false", "Thu":"false", "Fri":"false", "Sat":"false", "Sun":status, "start":startTime, "end":endTime]
                 self.arrayValuesForCell.append(dict)
             }
             break
