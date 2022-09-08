@@ -1,4 +1,6 @@
 # VNOfficeHourPicker
+<img alt="Sourcegraph for Repo Reference Count" src="https://img.shields.io/sourcegraph/rrc/varun-naharia/VNOfficeHourPicker">
+
 ![Screenshot](http://g.recordit.co/gVmU1045lk.gif)
 
 VNOfficeHourPicker let's you select Office/Institute opening hour for the week.
